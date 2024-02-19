@@ -1,12 +1,23 @@
 // src/routes/v0/browser/search/+server.js
 
 import { json } from '@sveltejs/kit';
-import { PERPLEXITY_API_KEY } from '$env/static/private'; // Ensure APIKEY is defined in .env
+import { PERPLEXITY_API_KEY } from '$env/static/private';
+import { RateLimiter } from 'sveltekit-rate-limiter/server';
 
-export async function GET({ url }) {
-	// Extract the query parameter from the request URL
-	const query = url.searchParams.get('q');
+// Initialize the rate limiter with desired limits
+const limiter = new RateLimiter({
+	IP: [10, 'h'], // Limit: 10 requests per IP per hour
+	IPUA: [5, 'm'] // Limit: 5 requests per IP+UserAgent per minute
+});
 
+export async function GET(event) {
+	// Check if the request is limited
+	if (await limiter.isLimited(event)) {
+		// Respond with 429 Too Many Requests if the rate limit is exceeded
+		return json({ error: 'Rate limit exceeded' }, { status: 429 });
+	}
+
+	const query = event.url.searchParams.get('q');
 	if (!query) {
 		return json({ error: 'Query parameter is required' }, { status: 400 });
 	}
@@ -14,12 +25,7 @@ export async function GET({ url }) {
 	const apiUrl = 'https://api.perplexity.ai/chat/completions';
 	const payload = {
 		model: 'pplx-70b-online',
-		messages: [
-			{
-				role: 'user',
-				content: query
-			}
-		],
+		messages: [{ role: 'user', content: query }],
 		max_tokens: 1000
 	};
 	const headers = {
@@ -40,7 +46,6 @@ export async function GET({ url }) {
 		}
 
 		const data = await response.json();
-
 		return json({ result: data.choices[0].message.content }, { status: 200 });
 	} catch (error) {
 		return json({ error: error.message }, { status: 500 });
