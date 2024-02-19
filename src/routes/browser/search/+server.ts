@@ -3,7 +3,10 @@
 import { json } from '@sveltejs/kit';
 import { PERPLEXITY_API_KEY } from '$env/static/private';
 import { RateLimiter } from 'sveltekit-rate-limiter/server';
-
+export const config = {
+	// Use 'nodejs18.x' for Serverless
+	runtime: 'edge'
+};
 // Initialize the rate limiter with desired limits
 const limiter = new RateLimiter({
 	IP: [300, 'h'], // Limit: 10 requests per IP per hour
