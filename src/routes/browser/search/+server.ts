@@ -6,8 +6,8 @@ import { RateLimiter } from 'sveltekit-rate-limiter/server';
 
 // Initialize the rate limiter with desired limits
 const limiter = new RateLimiter({
-	IP: [10, 'h'], // Limit: 10 requests per IP per hour
-	IPUA: [5, 'm'] // Limit: 5 requests per IP+UserAgent per minute
+	IP: [300, 'h'], // Limit: 10 requests per IP per hour
+	IPUA: [10000, 'm'] // Limit: 5 requests per IP+UserAgent per minute
 });
 
 export async function GET(event) {
