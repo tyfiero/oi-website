@@ -44,26 +44,7 @@ onMount(async () => {
 <div
 	class="relative h-screen cursor-default bg-white selection:bg-black selection:text-white"
 >
-<button class="mt-20" on:click={async ()=>{
-	const response = await fetch(`/browser/search?q=${encodeURIComponent("Whats the capital of london")}`);
 
-// 	const response = await fetch('/api/upload', {
-// 	method: 'POST',
-// 	headers: {
-// 		'Content-Type': 'application/json',
-// 	},
-// 	body: JSON.stringify({
-// 		query: "Whats the capital of london"
-// 	}),
-// });
-if (!response.ok) {
-		throw new Error(`An error occurred: ${response.statusText}`);
-	}
-	const data = await response.json();
-	// Assuming the structure of the response is similar to the Python example
-	console.log(data.result);
-
-}}>SEND</button>
 	<section class="z-10 h-full">
 
 		<div id="hero" class="flex h-full flex-col justify-end p-6 sm:p-12">
