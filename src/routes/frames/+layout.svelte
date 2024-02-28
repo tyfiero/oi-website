@@ -10,7 +10,7 @@
 	<!-- <title>The 01 Video Project</title>
 
 	<meta property="og:title" content="The Open Interpreter Project" />
-	<meta property="og:image" content="https://openinterpreter.com/assets/thumbnail.jpg" />
+	<meta property="og:image" content="https://openinterpreter.com/assets/thumbnail.png" />
 	<meta
 		property="og:description"
 		content="Open Interpreter is a free, open-source code interpreter."
@@ -26,7 +26,7 @@
 		name="twitter:description"
 		content="Open Interpreter is a free, open-source code interpreter."
 	/>
-	<meta name="twitter:image" content="https://openinterpreter.com/assets/thumbnail.jpg" /> -->
+	<meta name="twitter:image" content="https://openinterpreter.com/assets/thumbnail.png" /> -->
 </svelte:head>
 <nav class="fixed top-0 z-50 flex h-20 w-full items-center justify-between bg-black/90 px-5">
 	<div class="flex items-center space-x-4">

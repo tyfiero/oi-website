@@ -17,7 +17,7 @@
 		type: 'website',
 		images: [
 			{
-				url: 'https://openinterpreter.com/assets/thumbnail.jpg',
+				url: 'https://openinterpreter.com/assets/thumbnail.png',
 				width: 1200,
 				height: 627,
 				alt: 'Open Interpreter Thumbnail'
@@ -30,7 +30,7 @@
 		title: '01OS',
 		description:
 			'An Open Source Operating System with a LLM in the driver seat. A foundation for the next generation of AI devices.',
-		image: 'https://openinterpreter.com/assets/thumbnail.jpg'
+		image: 'https://openinterpreter.com/assets/thumbnail.png'
 	}}
 />
 <div class="relative h-screen cursor-default bg-black selection:bg-black selection:text-white">

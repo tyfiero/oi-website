@@ -68,7 +68,7 @@
 		type: 'website',
 		images: [
 			{
-				url: '/assets/thumbnail.jpg',
+				url: '/assets/thumbnail.png',
 				width: 1200,
 				height: 627,
 				alt: 'Open Interpreter Thumbnail'
@@ -80,7 +80,7 @@
 		card: 'summary_large_image',
 		title: '01 Video Project',
 		description: 'Crowd-sourced video frames for the 01 launch video',
-		image: 'https://openinterpreter.com/assets/thumbnail.jpg'
+		image: 'https://openinterpreter.com/assets/thumbnail.png'
 	}}
 />
 <div class="relative h-screen cursor-default bg-white selection:bg-black selection:text-white">
