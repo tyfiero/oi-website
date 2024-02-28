@@ -3,7 +3,7 @@
 	import Icon from '@iconify/svelte';
 	import { closeModal } from './svelte-modals/modalsStore';
 	import { fileNumber, imgUrl } from '../../stores/img';
-	import { displayPicker, displayedFrame } from '../../stores/frames';
+	import { displayPicker } from '../../stores/frames';
 
 	export let isOpen = true;
 </script>
@@ -15,7 +15,7 @@
 		transition:fade|global
 	>
 		<div
-			class="pointer-events-auto relative flex h-[45vh] w-[60vw] min-w-[240px] flex-col justify-between overflow-auto rounded-[6px] bg-black px-12 py-6"
+			class="pointer-events-auto relative flex h-[28vh] w-[60vw] min-w-[240px] flex-col justify-between overflow-auto rounded-[6px] bg-black px-12 py-6"
 		>
 			<button
 				class="absolute right-2 top-2 cursor-default rounded-full p-2 transition hover:bg-neutral-100 dark:hover:bg-neutral-700"
@@ -28,31 +28,25 @@
 			</button>
 
 			<div class="flex w-full flex-col items-center justify-center">
-				<h1 class="mb-4 text-3xl font-bold text-white">Rules</h1>
-				<ol class="list-decimal space-y-2 text-white">
-					<li>Frame MUST be human generated, no AI.</li>
-					<li>
-						Work on one frame at a time, once you finish and upload this frame, you can create
-						another.
-					</li>
-				</ol>
+				<p class="mb-8 text-xl font-bold text-white">
+					Thank you for your contribution to the 01 project.
+				</p>
+				<p in:fade={{ duration: 1000, delay: 0 }} class="text-white">
+					Why not make another frame while you're at it?
+				</p>
 			</div>
 
 			<section class="mb-8">
 				<div class="flex w-full items-center justify-center">
-					<a
-						href={$imgUrl}
-						download={$displayedFrame + '.png'}
-						target="_blank"
-						rel="noopener noreferrer"
+					<button
+						in:fade={{ duration: 1400, delay: 200 }}
 						on:click={() => {
-							displayPicker.set(false);
 							closeModal();
 						}}
 						class="z-50 h-min cursor-pointer border border-white px-3 py-2 text-white transition hover:bg-white hover:text-black"
 					>
-						Download Frame
-					</a>
+						Let's Do It!
+					</button>
 				</div>
 			</section>
 		</div>

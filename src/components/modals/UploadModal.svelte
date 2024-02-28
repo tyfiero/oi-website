@@ -1,38 +1,35 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 	import Icon from '@iconify/svelte';
-	import { closeModal } from './svelte-modals/modalsStore';
-	import { fileNumber } from '../../stores/img';
-	import { currentFrame } from '../../stores/frames';
+	import { closeModal, openModal } from './svelte-modals/modalsStore';
+	import {
+		assignedFrame,
+		availableFrames,
+		displayPicker,
+		displayedFrame,
+		getAvailableFrames
+	} from '../../stores/frames';
+	import ThanksModal from './ThanksModal.svelte';
 
 	export let isOpen = true;
 	let base64FileData = '';
-	let frameToUpload = 1;
 	let message = '';
 	async function convertToBase64(file) {
 		return new Promise((resolve, reject) => {
 			const reader = new FileReader();
 			reader.readAsDataURL(file);
 			reader.onload = () => resolve(reader.result.toString());
-			reader.onerror = error => reject(error);
+			reader.onerror = (error) => reject(error);
 		});
 	}
 
 	async function handleFileChange(event) {
 		const file = event.target.files[0];
 		if (file) {
-			console.log("FILE ADDED");
-			
+			//@ts-ignore
 			base64FileData = await convertToBase64(file);
-			navigator.clipboard.writeText(base64FileData).then(() => {
-				console.log("Base64 data copied to clipboard");
-			}, (err) => {
-				console.error('Could not copy text: ', err);
-			});
-			console.log("FILE CONVERTED TO BASE64");
 
-			message = `Frame added: ${file.name}`;
-			
+			message = `Selected File: ${file.name}`;
 		}
 	}
 
@@ -42,24 +39,32 @@
 		const response = await fetch('/api/upload', {
 			method: 'POST',
 			headers: {
-				'Content-Type': 'application/json',
+				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({
 				base64FileData,
-				fileNumber: $currentFrame,
-			}),
+				fileNumber: $assignedFrame
+			})
 		});
 		const data = await response.json();
-		console.log(data);
 
-		if(data.status === "success"){
-			console.log("FILE UPLOADED");
+		if (data.status === 'success') {
 			message = `Frame uploaded!`;
-		}else{
-			console.log("FILE NOT UPLOADED");
+			await getAvailableFrames();
+
+			const randomFrame = $availableFrames[Math.floor(Math.random() * $availableFrames.length)];
+			assignedFrame.set(randomFrame);
+			displayedFrame.set($availableFrames.indexOf(randomFrame) + 1);
+			displayPicker.set(true);
+			closeModal();
+
+			setTimeout(() => {
+				openModal(ThanksModal);
+			}, 1000);
+		} else {
+			// console.log('FILE NOT UPLOADED');
 			message = `Error uploading frame, please try again.`;
 		}
-		// closeModal();
 	}
 </script>
 
@@ -68,13 +73,12 @@
 		role="dialog"
 		class="transition-fade pointer-events-none fixed inset-0 z-[500] flex items-center justify-center"
 		transition:fade|global
-		
 	>
 		<div
-			class="pointer-events-auto relative flex h-[45vh] w-[60vw] min-w-[240px] flex-col justify-between overflow-auto rounded-[6px] px-12 py-6 bg-black"
+			class="pointer-events-auto relative flex h-[25vh] w-[60vw] min-w-[240px] flex-col justify-between overflow-auto rounded-[6px] bg-black px-12 py-6"
 		>
 			<button
-				class="absolute right-2 top-2 cursor-default rounded-full p-2 transition hover:bg-neutral-700 group"
+				class="group absolute right-2 top-2 cursor-default rounded-full p-2 transition hover:bg-neutral-700"
 				on:click|preventDefault={() => closeModal()}
 			>
 				<Icon
@@ -83,16 +87,36 @@
 				/>
 			</button>
 
-			<h1 class="mb-4 text-3xl font-bold text-white">Upload Frame</h1>
+			<h1 class="mb-4 text-3xl font-bold text-white">Upload</h1>
 
 			<section class="mb-8">
-				<input type="number" class="mb-4" bind:value={frameToUpload}>
-				<input type="file" accept=".jpg,.jpeg,.png" on:change={handleFileChange} class="mb-4">
+				{#if base64FileData}
+					<p class="pb-4 text-center text-lg text-white">{message}</p>
 
-				<p class="text-white text-lg text-center">{message}</p>
-				<div class="flex w-full items-center justify-center">
-					<button on:click={uploadFrame} class="h-min z-50 border cursor-pointer border-white px-3 py-2 transition text-white hover:bg-white hover:text-black">Upload Frame</button>
-				</div>
+					<div class="flex w-full items-center justify-center">
+						<button
+							on:click={uploadFrame}
+							class="group z-50 flex h-min cursor-pointer items-center gap-2 border border-white px-3 py-2 text-white transition hover:bg-white hover:text-black"
+							>Upload
+
+							<Icon icon="fa-solid:upload" class="ml-2 h-4 w-4 text-white group-hover:text-black" />
+						</button>
+					</div>
+				{:else}
+					<div class="mb-4 flex w-full items-center justify-center">
+						<label
+							class="z-50 h-min cursor-pointer border border-white px-3 py-2 text-white transition hover:bg-white hover:text-black"
+							for="file-upload">Choose File</label
+						>
+						<input
+							id="file-upload"
+							type="file"
+							accept=".jpg,.jpeg,.png"
+							on:change={handleFileChange}
+							class="hidden"
+						/>
+					</div>
+				{/if}
 			</section>
 		</div>
 	</div>
