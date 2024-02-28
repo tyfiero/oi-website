@@ -15,7 +15,7 @@ export async function POST({ request }) {
 
 	const { data, error } = await supabaseAdmin.storage
 		.from('video-files')
-		.download(fileNumber + '.png');
+		.download(fileNumber + '.jpg');
 	if (error) {
 		console.log(error);
 

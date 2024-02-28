@@ -17,11 +17,11 @@ export async function POST({ request }) {
 		base64FileData = base64FileData.split(',')[1];
 	}
 	while (!uploadSuccess) {
-		const fileName = `pre/${fileNumber}${uploadAttempt > 0 ? `-${uploadAttempt}` : ''}.png`;
+		const fileName = `pre/${fileNumber}${uploadAttempt > 0 ? `-${uploadAttempt}` : ''}.jpg`;
 		const { data, error } = await supabaseAdmin.storage
 			.from('video-files')
 			.upload(fileName, decode(base64FileData), {
-				contentType: 'image/png'
+				contentType: 'image/jpg'
 			});
 
 		if (error) {

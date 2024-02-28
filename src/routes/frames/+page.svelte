@@ -11,6 +11,7 @@
 		getAvailableFrames
 	} from '../../stores/frames';
 	import { setImg, imgUrl } from '../../stores/img';
+	import Icon from '@iconify/svelte';
 	// import { imgUrl, setImg } from '../../stores/img';
 
 	let frameDoesNotExist = false;
@@ -20,8 +21,7 @@
 		// console.log(number);
 		// if(number){
 		// 	console.log("FRAME NUMBER SET");
-		// 	currentFrame.set(parseInt(number))
-		// 	imgUrl.set("https://neyguovvcjxfzhqpkicj.supabase.co/storage/v1/object/public/video-files/pre/" + number + ".png")
+		// 	imgUrl.set("https://neyguovvcjxfzhqpkicj.supabase.co/storage/v1/object/public/video-files/pre/" + number + ".jpg")
 		// }
 		await getAvailableFrames();
 		console.log('available frames: ', $availableFrames);
@@ -48,7 +48,8 @@
 	let lastDisplayedFrame = 10000;
 
 	$: {
-		if ($displayedFrame !== lastDisplayedFrame) {
+		console.log($imgUrl);
+		if ($displayedFrame !== lastDisplayedFrame && $displayedFrame !== 0) {
 			setImg($displayedFrame);
 			lastDisplayedFrame = $displayedFrame;
 		}
@@ -88,13 +89,20 @@
 			{#if frameDoesNotExist}
 				<p class="text-lg font-bold text-black">Frame does not exist</p>
 			{/if}
-			<img
-				src={$imgUrl}
-				alt="Frame"
-				on:error={() => (frameDoesNotExist = true)}
-				on:load={() => (frameDoesNotExist = false)}
-				class={frameDoesNotExist ? 'hidden' : ''}
-			/>
+
+			{#if $displayedFrame === 0}
+				<div class="fixed bottom-0 left-0 right-0 top-0 flex items-center justify-center">
+					<Icon icon="mingcute:loading-fill" class="h-12 w-12 animate-spin text-black" />
+				</div>
+			{:else}
+				<img
+					src={$imgUrl}
+					alt="Frame"
+					on:error={() => (frameDoesNotExist = true)}
+					on:load={() => (frameDoesNotExist = false)}
+					class={frameDoesNotExist ? 'hidden' : ''}
+				/>
+			{/if}
 		</div>
 	</section>
 </div>

@@ -2,10 +2,9 @@ import { get, writable } from 'svelte/store';
 import { persisted } from 'svelte-persisted-store';
 import { setImg } from './img';
 
-export const totalFrames = writable(200);
+export const totalFrames = writable(269);
 export const availableFrames = writable([]);
-export const currentFrame = writable(1);
-export const displayedFrame = writable(1);
+export const displayedFrame = writable(0);
 export const assignedFrame = persisted('assignedFrame', null);
 export const displayPicker = persisted('displayPicker', true);
 export function updateAssignedFrameFromIndex(index) {

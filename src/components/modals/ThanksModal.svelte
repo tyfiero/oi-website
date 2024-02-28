@@ -15,7 +15,7 @@
 		transition:fade|global
 	>
 		<div
-			class="pointer-events-auto relative flex h-[28vh] w-[60vw] min-w-[240px] flex-col justify-between overflow-auto rounded-[6px] bg-black px-12 py-6"
+			class="pointer-events-auto relative flex h-[28vh] w-[60vw] min-w-[240px] flex-col justify-between overflow-auto rounded-[6px] bg-neutral-900 px-12 py-6"
 		>
 			<button
 				class="absolute right-2 top-2 cursor-default rounded-full p-2 transition hover:bg-neutral-100 dark:hover:bg-neutral-700"

@@ -64,27 +64,8 @@
 	<button
 		class="popover-trigger flex w-fit items-center gap-2 border border-black bg-white px-4 py-1 transition"
 	>
-		<!-- <button on:click={() => {
-        if($currentFrame > 1){
-            currentFrame.set($currentFrame - 1)
-        }
-     }}>
-     </button> -->
-		<!-- <Icon
-     icon="fa-solid:caret-left"
-     class="h-6 w-6 text-black"
-     /> -->
 
 		<p class="select-none">{frameToGoTo} / {$availableFrames.length}</p>
-		<!-- <button on:click={() => {
-            if($currentFrame <  $totalFrames){
-                currentFrame.set($currentFrame + 1)
-            }
-         }}>
-            <Icon
-            icon="fa-solid:caret-right"
-            class="h-6 w-6 text-black"
-            />
-        </button> -->
+
 	</button>
 </div>
