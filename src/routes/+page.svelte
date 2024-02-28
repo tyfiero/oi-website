@@ -1,9 +1,10 @@
 <script>
 	import BentoGrid from './../components/bento/BentoGrid.svelte';
 	import { goto, pushState } from '$app/navigation';
-	import SvelteSeo from 'svelte-seo';
+	// import SvelteSeo from 'svelte-seo';
 </script>
 
+<!-- 
 <SvelteSeo
 	title="01OS"
 	description="An Open Source Operating System with a LLM in the driver seat. A foundation for the next generation of AI devices."
@@ -32,7 +33,7 @@
 			'An Open Source Operating System with a LLM in the driver seat. A foundation for the next generation of AI devices.',
 		image: 'https://openinterpreter.com/assets/thumbnail.png'
 	}}
-/>
+/> -->
 <div class="relative h-screen cursor-default bg-black selection:bg-black selection:text-white">
 	<!-- <nav class="mb-10 flex h-20 w-full items-center justify-between bg-black/90 px-5">
 		<a href="/" class="flex items-center gap-2">

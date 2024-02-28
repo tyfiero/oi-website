@@ -2,7 +2,7 @@ import { get, writable } from 'svelte/store';
 import { persisted } from 'svelte-persisted-store';
 import { setImg } from './img';
 
-export const totalFrames = writable(269);
+export const totalFrames = writable(134);
 export const availableFrames = writable([]);
 export const displayedFrame = writable(0);
 export const assignedFrame = persisted('assignedFrame', null);
@@ -28,7 +28,7 @@ export const getAvailableFrames = async () => {
 	// console.log('uploaded frames in func: ', uploadedFrames);
 
 	if (uploadedFrames.length > 0) {
-		// console.log(uploadedFrames);
+		console.log(uploadedFrames);
 
 		let freeFrames = Array.from({ length: get(totalFrames) }, (_, i) => i + 1).filter(
 			(frame) => !uploadedFrames.includes(frame)

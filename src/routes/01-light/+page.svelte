@@ -1,4 +1,6 @@
 <script>
+	import Icon from '@iconify/svelte';
+	import { fade } from 'svelte/transition';
 	import SvelteSeo from 'svelte-seo';
 </script>
 
@@ -32,47 +34,48 @@
 	}}
 />
 
-<div class="container mx-auto px-4">
-	<header class="py-12 text-center">
-		<h1 class="mb-4 text-5xl font-bold text-neutral-800">01 Light</h1>
-		<p class="mb-4 text-xl text-neutral-600">Your personal AI assistant</p>
-		<a
-			class="z-5 mt-4 h-min cursor-pointer border border-black px-3 py-2 text-black transition hover:bg-black hover:text-white"
-			href="https://0ggfznkwh4j.typeform.com/to/UvODRiEO"
-			target="_blank"
-			rel="noopener noreferrer">Pre-Order</a
-		>
-	</header>
-
-	<section class="my-8">
-		<img src="/01light.jpg" alt="01 Light Device" class="w-full rounded-lg shadow-lg" />
-	</section>
-
-	<section class="my-12 grid gap-8 text-center md:grid-cols-3">
-		<div class="rounded-lg bg-white p-6 shadow">
-			<h2 class="text-lg font-bold">Wireless Connectivity</h2>
-			<p class="text-neutral-600">Easily connect to any server wirelessly.</p>
+<div class="flex h-screen flex-col !overflow-hidden lg:flex-row">
+	<div class="relative w-full flex-1 overflow-y-auto lg:w-1/2">
+		<div class="absolute top-20 flex w-full items-center justify-center">
+			<h1 class="text-center text-5xl">01 Light</h1>
 		</div>
-		<div class="rounded-lg bg-white p-6 shadow">
-			<h2 class="text-lg font-bold">Smart AI Integration</h2>
-			<p class="text-neutral-600">Intelligent AI to answer your questions on the go.</p>
+		<div class="h-[40rem] w-full">
+			<img
+				in:fade={{ duration: 400 }}
+				class="fade-fast h-auto w-full"
+				src="/hand.png"
+				alt="01 light"
+			/>
 		</div>
-		<div class="rounded-lg bg-white p-6 shadow">
-			<h2 class="text-lg font-bold">Long-Lasting Battery</h2>
-			<p class="text-neutral-600">Designed for all-day use without the need for charging.</p>
+		<div class="flex w-full justify-center">
+			<a
+				class="z-5 mt-4 h-min cursor-pointer rounded-full border border-black px-3 py-2 text-black transition hover:bg-black hover:text-white"
+				href="https://0ggfznkwh4j.typeform.com/to/UvODRiEO"
+				target="_blank"
+				rel="noopener noreferrer">Pre-Order</a
+			>
 		</div>
-	</section>
+	</div>
+	<div class="relative w-full flex-1 overflow-y-auto bg-black lg:w-1/2">
+		<h1 class="my-40 text-center text-5xl text-white">Join the Developer Community</h1>
 
-	<section id="preorder" class="my-12 rounded-lg bg-neutral-100 p-6 text-center">
-		<h2 class="mb-4 text-3xl font-bold text-neutral-800">Ready to get started?</h2>
-		<p class="mb-8 text-neutral-600">
-			Preorder your 01 Light today and be the first to experience the future of personal assistance.
-		</p>
-		<a
-			class="z-5 mt-4 h-min cursor-pointer border border-black px-3 py-2 text-black transition hover:bg-black hover:text-white"
-			href="https://0ggfznkwh4j.typeform.com/to/UvODRiEO"
-			target="_blank"
-			rel="noopener noreferrer">Pre-Order</a
-		>
-	</section>
+		<div class="flex w-full items-center justify-center gap-4">
+			<a
+				class="z-5 mt-4 flex h-min cursor-pointer items-center gap-2 border border-white px-3 py-2 text-white transition hover:bg-white hover:text-black"
+				href="https://discord.gg/Hvz9Axh84z"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<Icon icon="ic:round-discord" class="h-5 w-5" /> Join the Community
+			</a>
+			<a
+				class="z-5 mt-4 flex h-min cursor-pointer items-center gap-2 border border-white px-3 py-2 text-white transition hover:bg-white hover:text-black"
+				href="https://github.com/KillianLucas/01"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<Icon icon="fa:github" class="h-5 w-5" /> Github
+			</a>
+		</div>
+	</div>
 </div>
