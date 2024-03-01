@@ -41,8 +41,8 @@
 	<!-- <div class="absolute left-0 top-0 -z-10 h-full w-1/2 bg-white"></div>
 	<div class="absolute right-0 top-0 -z-10 hidden h-full w-1/2 bg-black md:block"></div> -->
 	<div class="relative flex min-h-screen flex-col md:flex-row">
-		<Consumer />
-		<Dev />
+		<!-- <Consumer />
+		<Dev /> -->
 	</div>
 
 	<div class="w-full flex-col">

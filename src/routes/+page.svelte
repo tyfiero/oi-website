@@ -54,5 +54,5 @@
 			>
 		</div>
 	</nav> -->
-	<BentoGrid />
+	<!-- <BentoGrid /> -->
 </div>
