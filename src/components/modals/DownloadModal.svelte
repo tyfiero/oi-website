@@ -16,7 +16,7 @@
 		transition:fade|global
 	>
 		<div
-			class="pointer-events-auto relative flex h-[75vh] w-[60vw] min-w-[240px] flex-col justify-between overflow-auto rounded-[6px] bg-neutral-900 px-12 py-6"
+			class="pointer-events-auto relative flex h-[75vh] w-[70vw] min-w-[240px] flex-col justify-between overflow-auto rounded-[6px] bg-neutral-900 px-12 py-6"
 		>
 			<button
 				class="absolute right-2 top-2 cursor-default rounded-full p-2 transition hover:bg-neutral-100 dark:hover:bg-neutral-700"
@@ -33,7 +33,7 @@
 				<Guidelines />
 			</div>
 
-			<section class="mb-8">
+			<section class="mb-8 mt-8">
 				<div class="flex w-full items-center justify-center">
 					<a
 						href={$imgUrl}
@@ -48,6 +48,22 @@
 					>
 						Download Frame
 					</a>
+				</div>
+				<p class="mb-4 text-white">Example:</p>
+
+				<div class="flex items-center gap-4">
+					<img
+						src="https://neyguovvcjxfzhqpkicj.supabase.co/storage/v1/object/public/video-files/initial/63.jpg"
+						class="h-auto w-80"
+						alt="Reference frame"
+					/>
+
+					<Icon icon="fa-solid:arrow-right" class="h-6 w-6 text-white" />
+					<img
+						src="https://neyguovvcjxfzhqpkicj.supabase.co/storage/v1/object/public/video-files/pre/63.jpg"
+						class="h-auto w-80"
+						alt="Hand-drawn frame"
+					/>
 				</div>
 			</section>
 		</div>

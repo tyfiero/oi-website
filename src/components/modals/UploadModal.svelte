@@ -119,6 +119,23 @@
 						/>
 					</div>
 				{/if}
+
+				<p class="mb-4 text-white">Example:</p>
+
+				<div class="flex items-center gap-4">
+					<img
+						src="https://neyguovvcjxfzhqpkicj.supabase.co/storage/v1/object/public/video-files/initial/63.jpg"
+						class="h-auto w-80"
+						alt="Reference frame"
+					/>
+
+					<Icon icon="fa-solid:arrow-right" class="h-6 w-6 text-white" />
+					<img
+						src="https://neyguovvcjxfzhqpkicj.supabase.co/storage/v1/object/public/video-files/pre/63.jpg"
+						class="h-auto w-80"
+						alt="Hand-drawn frame"
+					/>
+				</div>
 			</section>
 		</div>
 	</div>

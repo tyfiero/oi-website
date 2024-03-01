@@ -1,4 +1,5 @@
 <script>
+	import Icon from '@iconify/svelte';
 	import { availableFrames } from '../../stores/frames';
 	export let upload = false;
 </script>
