@@ -3,7 +3,8 @@
 	import Icon from '@iconify/svelte';
 	import { closeModal } from './svelte-modals/modalsStore';
 	import { fileNumber, imgUrl } from '../../stores/img';
-	import { displayPicker, displayedFrame } from '../../stores/frames';
+	import { availableFrames, displayPicker, displayedFrame } from '../../stores/frames';
+	import Guidelines from './Guidelines.svelte';
 
 	export let isOpen = true;
 </script>
@@ -15,7 +16,7 @@
 		transition:fade|global
 	>
 		<div
-			class="pointer-events-auto relative flex h-[35vh] w-[60vw] min-w-[240px] flex-col justify-between overflow-auto rounded-[6px] bg-neutral-900 px-12 py-6"
+			class="pointer-events-auto relative flex h-[75vh] w-[60vw] min-w-[240px] flex-col justify-between overflow-auto rounded-[6px] bg-neutral-900 px-12 py-6"
 		>
 			<button
 				class="absolute right-2 top-2 cursor-default rounded-full p-2 transition hover:bg-neutral-100 dark:hover:bg-neutral-700"
@@ -28,15 +29,8 @@
 			</button>
 
 			<div class="flex w-full flex-col items-center justify-center">
-				<h1 class="mb-4 text-3xl font-bold text-white">Rules</h1>
-				<ol class="list-decimal space-y-2 text-white">
-					<li>Frame MUST be human generated, no AI.</li>
-					<li>
-						Work on one frame at a time, once you finish and upload this frame, you can create
-						another.
-					</li>
-					<li>Be creative and have fun!</li>
-				</ol>
+				<h1 class="mb-4 text-xl font-bold text-white">Thank you for helping us launch the 01!</h1>
+				<Guidelines />
 			</div>
 
 			<section class="mb-8">

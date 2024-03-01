@@ -10,6 +10,7 @@
 		getAvailableFrames
 	} from '../../stores/frames';
 	import ThanksModal from './ThanksModal.svelte';
+	import Guidelines from './Guidelines.svelte';
 
 	export let isOpen = true;
 	let base64FileData = '';
@@ -75,7 +76,7 @@
 		transition:fade|global
 	>
 		<div
-			class="pointer-events-auto relative flex h-[25vh] w-[60vw] min-w-[240px] flex-col justify-between overflow-auto rounded-[6px] bg-neutral-900 px-12 py-6"
+			class="pointer-events-auto relative flex h-fit w-[60vw] min-w-[240px] flex-col justify-between overflow-auto rounded-[6px] bg-neutral-900 px-12 py-6"
 		>
 			<button
 				class="group absolute right-2 top-2 cursor-default rounded-full p-2 transition hover:bg-neutral-700"
@@ -87,11 +88,12 @@
 				/>
 			</button>
 
-			<h1 class="mb-4 text-3xl font-bold text-white">Upload</h1>
+			<h1 class="mb-4 text-xl font-bold text-white">Upload</h1>
 
-			<section class="mb-8">
+			<section>
+				<Guidelines upload={true} />
 				{#if base64FileData}
-					<p class="pb-4 text-center text-lg text-white">{message}</p>
+					<p class="my-4 text-center text-lg text-white">{message}</p>
 
 					<div class="flex w-full items-center justify-center">
 						<button
@@ -103,7 +105,7 @@
 						</button>
 					</div>
 				{:else}
-					<div class="mb-4 flex w-full items-center justify-center">
+					<div class="mb-4 mt-8 flex w-full items-center justify-center">
 						<label
 							class="z-50 h-min cursor-pointer border border-white px-3 py-2 text-white transition hover:bg-white hover:text-black"
 							for="file-upload">Choose File</label

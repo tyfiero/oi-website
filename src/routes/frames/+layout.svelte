@@ -33,7 +33,13 @@
 		<!-- <div class="h-5 w-5 rounded-full bg-white saturate-200"></div> -->
 		<!-- <div class="hidden text-xl text-white md:block">Open Interpreter</div> -->
 
-		<p class="text-white">We need your help making hand-drawn frames for the 01 launch video</p>
+		<p class="text-white">
+			The
+			<a class="underline" href="https://github.com/KillianLucas/01" target="__blank">
+				01 Project
+			</a> is launching soon. We need your help to create the launch animation. Download a frame to get
+			started ➜
+		</p>
 	</div>
 	<div class="z-10 flex items-center space-x-4">
 		<button

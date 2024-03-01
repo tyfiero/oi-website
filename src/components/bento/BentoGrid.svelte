@@ -5,10 +5,10 @@
 
 <div class="relative z-0 grid h-full grid-cols-1 overflow-y-auto md:grid-cols-4 md:grid-rows-3">
 	<div class="group relative h-full w-full md:row-span-2">
-		<BentoUnit href="/01OS" url="/cd.png" alt="01OS CD" title="01OS">
+		<BentoUnit href="/01-light" url="01light2.jpg" alt="01 Light" title="O1 Light">
 			<div class="absolute left-6 top-4 flex items-center gap-2">
-				<div class="h-5 w-5 rounded-full bg-black saturate-200"></div>
-				<div class="hidden text-2xl text-black md:block">01</div>
+				<div class="h-5 w-5 rounded-full bg-white saturate-200"></div>
+				<div class="hidden text-2xl text-white md:block">01</div>
 			</div>
 		</BentoUnit>
 	</div>
@@ -18,23 +18,38 @@
 			targetBlank
 			url="/killian.jpg"
 			alt="01OS CD"
-			title="01OS"
+			title="News"
 		/>
 	</div>
 	<div class="group relative md:col-span-2 md:col-start-2 md:row-start-3">
-		<BentoUnit href="/01-light" url="/01light.jpg" alt="01 light image" title="01 Light" />
+		<BentoUnit
+			href="https://discord.gg/Hvz9Axh84z"
+			url="/community2.jpg"
+			alt="Community"
+			title="Community"
+		/>
 	</div>
 	<div class="md:ol-start-4 group relative md:row-start-3">
-		<BentoUnit href="/frames" url="/vik.jpg" alt="01OS CD" title="01OS" />
+		<BentoUnit href="/frames" url="/wow.jpg" alt="01OS CD" title="01OS" />
 	</div>
 	<div class="group relative md:col-start-1 md:row-start-3">
-		<BentoUnit href="/" url="/wow.jpg" alt="01OS CD" title="01OS" />
+		<BentoUnit href="/" url="/HD2.png" alt="01OS Heavy" title="01OS" />
 	</div>
 	<div class="group relative md:col-start-2 md:row-start-1">
-		<BentoUnit href="/frames" url="/seattle.jpg" alt="01OS CD" title="01OS" />
+		<BentoUnit
+			href="https://github.com/KillianLucas/aifs"
+			url="/floppy.jpg"
+			alt="AIFS"
+			title="AI Filesystem"
+		/>
 	</div>
 	<div class="group relative md:col-start-2 md:row-start-2">
-		<BentoUnit href="/01-heavy" url="/heavy.jpg" alt="01OS CD" title="01 Heavy" />
+		<BentoUnit
+			href="https://openinterpreter.com/"
+			url="/cd-grass.jpg"
+			alt="01OS CD"
+			title="Open Interpreter"
+		/>
 	</div>
 </div>
 

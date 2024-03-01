@@ -1,8 +1,6 @@
 <script>
 	import SvelteSeo from 'svelte-seo';
-	import { goto, pushState } from '$app/navigation';
 
-	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import {
 		assignedFrame,

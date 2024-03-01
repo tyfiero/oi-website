@@ -15,7 +15,9 @@
 	<div class="flex w-full items-center gap-1">
 		<p class="text-2xl font-bold text-white">{title}</p>
 
-		<Icon icon="ci:arrow-up-right-md" class="h-8 w-8 translate-y-0.5 text-white" />
+		{#if title !== 'Coming Soon...'}
+			<Icon icon="ci:arrow-up-right-md" class="h-8 w-8 translate-y-0.5 text-white" />
+		{/if}
 	</div>
 </a>
 <img src={url} {alt} class="h-full w-full object-cover" />
