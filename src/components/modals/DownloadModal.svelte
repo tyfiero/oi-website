@@ -51,7 +51,7 @@
 				</div>
 				<p class="mb-4 text-white">Example:</p>
 
-				<div class="flex items-center gap-4">
+				<div class="flex items-center justify-center gap-4">
 					<img
 						src="https://neyguovvcjxfzhqpkicj.supabase.co/storage/v1/object/public/video-files/initial/63.jpg"
 						class="h-auto w-80"
