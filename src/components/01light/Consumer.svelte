@@ -4,19 +4,32 @@
 </script>
 
 <!-- LEFT SIDE (CONSUMER) -->
-<div class="flex w-full flex-col md:w-1/2">
+<div class="relative flex h-full min-h-screen w-full flex-col justify-between md:w-1/2">
 	<!-- SECTION 1 -->
-	<div class="flex w-full flex-col pt-20 md:flex-row">
+	<div class="flex w-full flex-col pt-10 md:flex-row">
 		<!-- LEFT -->
 		<div class="w-full">
-			<h1 class="text-center text-5xl">01 Light</h1>
+			<h1 class="text-center text-5xl text-white">01 Light</h1>
 		</div>
 	</div>
+
+	<div class="absolute bottom-0 left-0 right-0 top-0 -z-10 h-full w-[101%] bg-black">
+		<img
+			on:load={() => {
+				loaded = true;
+			}}
+			class="h-full w-full object-cover {loaded ? 'fade-fast' : 'opacity-100'}"
+			src="/01inhand.webp"
+			alt="01 light"
+		/>
+	</div>
+
 	<!-- SECTION 2 -->
-	<div class="flex h-[26rem] w-full flex-col md:h-[43rem] md:flex-row">
-		<!-- LEFT -->
-		<div class="w-full">
+	<!-- <div class="flex h-[26rem] w-full flex-col md:h-[32rem] md:flex-row"> -->
+	<!-- LEFT -->
+	<!-- <div class="w-full">
 			<div class=" w-full">
+				
 				<img
 					on:load={() => {
 						loaded = true;
@@ -26,17 +39,17 @@
 					alt="01 light"
 				/>
 			</div>
-		</div>
-		<!-- </div> -->
-	</div>
+		</div> -->
+	<!-- </div> -->
+	<!-- </div> -->
 	<!-- SECTION 3 -->
-	<div class="z-50 mb-10 flex w-full flex-col md:flex-row">
+	<div class="z-50 mb-8 flex w-full flex-col text-white md:flex-row">
 		<!-- LEFT -->
 		<div class="w-full">
 			<p class="text-center">Limited stock of 100 units, order now</p>
 			<div class="flex w-full justify-center px-5">
 				<a
-					class="z-5 mt-4 h-min cursor-pointer rounded-full border border-black px-6 py-2 text-xl text-black transition hover:bg-black hover:text-white"
+					class="z-5 mt-4 h-min cursor-pointer rounded-full border border-white px-6 py-2 text-xl text-white transition hover:bg-white hover:text-black"
 					href="https://0ggfznkwh4j.typeform.com/to/UvODRiEO"
 					target="_blank"
 					rel="noopener noreferrer">Pre-Order</a
