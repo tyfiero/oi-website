@@ -6,13 +6,13 @@
 	</div>
 	<div class="hidden text-xl md:block">Open Interpreter</div>
 	<div class="flex flex-col text-lg md:flex-row md:space-x-12">
-		<a href="/01-light" class="hover:underline">01</a>
-		<a href="https://github.com/KillianLucas/open-interpreter/" class="hover:underline">About</a><a
+		<a href="/01" class="hover:underline">Discord</a>
+		<a href="https://github.com/KillianLucas/open-interpreter/" class="hover:underline">Docs</a><a
 			href="https://changes.openinterpreter.com/"
-			class="hover:underline">Updates</a
-		><a href="https://docs.openinterpreter.com/" class="hover:underline">Docs</a><a
-			href="https://twitter.com/hellokillian"
 			class="hover:underline">Contact</a
+		><a
+			href="https://0ggfznkwh4j.typeform.com/to/W5At4fmF"
+			class="rounded border px-2 hover:underline">Careers</a
 		>
 	</div>
 </nav>

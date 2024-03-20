@@ -5,7 +5,7 @@
 
 <div class="relative z-0 grid h-full grid-cols-1 overflow-y-auto md:grid-cols-4 md:grid-rows-3">
 	<div class="group relative h-full w-full md:row-span-2">
-		<BentoUnit href="/01-light" url="01light2.jpg" alt="01 Light" title="O1 Light">
+		<BentoUnit href="/01" url="01light2.jpg" alt="01 Light" title="O1 Light">
 			<div class="absolute left-6 top-4 flex items-center gap-2">
 				<div class="h-5 w-5 rounded-full bg-white saturate-200"></div>
 				<div class="hidden text-2xl text-white md:block">01</div>

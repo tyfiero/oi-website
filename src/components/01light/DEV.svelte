@@ -8,7 +8,7 @@
 	<div class="flex w-full flex-col pt-10 md:flex-row">
 		<!-- RIGHT -->
 		<div class="w-full">
-			<h1 class="text-center text-5xl text-white">For Developers</h1>
+			<h1 class="text-center text-5xl text-white">Developer Preview</h1>
 		</div>
 	</div>
 
@@ -34,7 +34,7 @@
 				</p>
 			</div>
 
-			<!-- <h2 class="mt-10 text-3xl text-white">Guides</h2>
+			<h2 class="mt-10 text-3xl text-white">Guides</h2>
 			<div class="grid w-full grid-cols-2 items-center gap-4">
 				<a
 					href="https://github.com/KillianLucas/01"
@@ -58,29 +58,7 @@
 						class="absolute right-1 top-1 h-6 w-6  text-white group-hover:text-black"
 					/>
 				</a>
-				<a
-					href="https://github.com/KillianLucas/01"
-					class="z-5 group relative mt-4 flex h-full w-full cursor-pointer flex-col gap-1 border border-white px-3 py-2 text-white transition hover:bg-white hover:text-black"
-				>
-					<h3 class="text-lg font-semibold">Hardware</h3>
-					<p class="text-sm">Everything you need to build an 01 Light in an afternoon</p>
-					<Icon
-						icon="ci:arrow-up-right-md"
-						class="absolute right-1 top-1 h-6 w-6  text-white group-hover:text-black"
-					/>
-				</a>
-				<a
-					href="https://github.com/KillianLucas/01"
-					class="z-5 group relative mt-4 flex h-full w-full cursor-pointer flex-col gap-1 border border-white px-3 py-2 text-white transition hover:bg-white hover:text-black"
-				>
-					<h3 class="text-lg font-semibold">Software</h3>
-					<p class="text-sm">Get 01OS up and running on a variety of devices in no time</p>
-					<Icon
-						icon="ci:arrow-up-right-md"
-						class="absolute right-1 top-1 h-6 w-6  text-white group-hover:text-black"
-					/>
-				</a>
-			</div> -->
+			</div>
 		</div>
 	</div>
 

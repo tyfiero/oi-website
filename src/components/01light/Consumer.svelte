@@ -19,7 +19,7 @@
 				loaded = true;
 			}}
 			class="h-full w-full object-cover {loaded ? 'fade-fast' : 'opacity-100'}"
-			src="/01inhand.webp"
+			src="/01-light-in-hand.jpg"
 			alt="01 light"
 		/>
 	</div>

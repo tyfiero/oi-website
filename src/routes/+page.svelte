@@ -38,7 +38,9 @@
 		<source src="https://openinterpreter.com/assets/ncu_short.mp4" type="video/mp4" />
 		Your browser does not support the video tag.
 	</video>
-	<Nav />
+	<div class="invert">
+		<Nav />
+	</div>
 	<section class="z-10 h-screen pb-24 sm:pb-0">
 		<div id="hero" class="flex h-full flex-col justify-end p-6 sm:p-12">
 			<div class="mb-4 text-5xl font-light sm:w-auto sm:text-7xl md:max-w-4xl">
