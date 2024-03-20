@@ -64,8 +64,6 @@
 	<button
 		class="popover-trigger flex w-fit items-center gap-2 border border-black bg-white px-4 py-1 transition"
 	>
-
 		<p class="select-none">{frameToGoTo} / {$availableFrames.length}</p>
-
 	</button>
 </div>
