@@ -96,7 +96,7 @@
 
 				<!-- Right button -->
 				<a
-					href="https://twitter.com/OpenInterpreter"
+					href="https://twitter.com/OpenInterpreter/status/1770821439458840846"
 					class="align-center flex h-min items-center justify-center gap-1.5 rounded border border-white px-2 py-1 align-middle text-white hover:bg-white hover:text-black"
 					>Watch the video
 					<svg
