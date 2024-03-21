@@ -3,26 +3,26 @@
 </script>
 
 <svelte:head>
-	<title>The Open Interpreter Project</title>
+	<title>The 01 Project</title>
 
-	<meta property="og:title" content="The Open Interpreter Project" />
-	<meta property="og:image" content="https://openinterpreter.com/assets/thumbnail.jpg" />
+	<meta property="og:title" content="The 01 Project" />
+	<meta property="og:image" content="https://openinterpreter.com/assets/01-model.jpg" />
 	<meta
 		property="og:description"
-		content="Open Interpreter is a free, open-source code interpreter."
+		content="The 01 Project is a voice interface for your home computer."
 	/>
-	<meta property="og:url" content="https://openinterpreter.com" />
+	<meta property="og:url" content="https://openinterpreter.com/01" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="627" />
 	<meta property="og:type" content="website" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="The Open Interpreter Project" />
+	<meta name="twitter:title" content="The 01 Project" />
 	<meta
 		name="twitter:description"
-		content="Open Interpreter is a free, open-source code interpreter."
+		content="The 01 Project is a voice interface for your home computer."
 	/>
-	<meta name="twitter:image" content="https://openinterpreter.com/assets/thumbnail.jpg" />
+	<meta name="twitter:image" content="https://openinterpreter.com/assets/01-model.jpg" />
 </svelte:head>
 
 <div class="relative h-screen cursor-default selection:bg-black selection:text-black">

@@ -1,9 +1,3 @@
-<script>
-	import { goto, pushState } from '$app/navigation';
-	import BentoGrid from '../../components/bento/BentoGrid.svelte';
-	// import SvelteSeo from 'svelte-seo';
-</script>
-
 <!-- 
 <SvelteSeo
 	title="01OS"
@@ -34,6 +28,6 @@
 		image: 'https://openinterpreter.com/assets/thumbnail.png'
 	}}
 /> -->
-<div class="relative h-screen cursor-default bg-black selection:bg-black selection:text-white">
+<!-- <div class="relative h-screen cursor-default bg-black selection:bg-black selection:text-white">
 	<BentoGrid />
-</div>
+</div> -->
