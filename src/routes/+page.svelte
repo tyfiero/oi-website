@@ -82,7 +82,7 @@
 
 				<!-- Right button -->
 				<a
-					href="/01-light"
+					href="/01"
 					class="h-min border border-black px-3 py-2 transition hover:bg-black hover:text-white"
 					>Pre-Order the 01 Light</a
 				>

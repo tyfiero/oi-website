@@ -25,7 +25,7 @@
 	<meta name="twitter:image" content="https://openinterpreter.com/assets/thumbnail.jpg" />
 </svelte:head>
 
-<div class="relative hidden h-screen cursor-default selection:bg-black selection:text-black">
+<div class="relative h-screen cursor-default selection:bg-black selection:text-black">
 	<!-- <video
 		class="pointer-events-none absolute left-1/2 top-1/2 -z-10 max-h-full min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-[25%] invert"
 		autoplay
