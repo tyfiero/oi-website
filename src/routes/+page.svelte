@@ -28,14 +28,14 @@
 	class="relative h-screen cursor-default bg-white invert selection:bg-black selection:text-white"
 >
 	<video
-		class="pointer-events-none absolute left-1/2 top-1/2 -z-10 max-h-full min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-[25%] invert"
+		class="pointer-events-none absolute left-1/2 top-1/2 -z-10 max-h-full min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-[18%] invert"
 		autoplay
 		loop
 		muted
 		playsinline
-		poster="https://openinterpreter.com/assets/computer_api.png"
+		poster="/assets/s.jpg"
 	>
-		<source src="https://openinterpreter.com/assets/ncu_short.mp4" type="video/mp4" />
+		<source src="/assets/sizzle.mp4" type="video/mp4" />
 		Your browser does not support the video tag.
 	</video>
 	<div class="invert">
@@ -55,14 +55,14 @@
 				<div class="mb-4 mr-4 flex items-center space-x-6 md:mb-0">
 					<a
 						href="https://github.com/KillianLucas/open-interpreter/"
-						class="h-min rounded-md border border-black px-3 py-2 transition hover:bg-black hover:text-white"
+						class="h-min rounded-md border border-black px-2 py-1 hover:bg-black hover:text-white"
 						>★ 40K Github</a
 					>
 					<a
 						href="https://twitter.com/OpenInterpreter"
-						class="flex h-min items-center space-x-1 border-b border-black transition hover:border-transparent"
+						class="flex h-min items-center space-x-1 border-b border-black hover:border-transparent"
 					>
-						<span>Watch the 01 video</span>
+						<span>Watch 01 video</span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -83,8 +83,8 @@
 				<!-- Right button -->
 				<a
 					href="/01"
-					class="h-min rounded-md border border-black px-3 py-2 transition hover:bg-black hover:text-white"
-					>Pre-order the 01 Light</a
+					class="h-min rounded-md border border-black px-2 py-1 hover:bg-black hover:text-white"
+					>Learn more about 01</a
 				>
 			</div>
 		</div>

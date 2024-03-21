@@ -19,6 +19,7 @@
 	</div>
 	<div class="hidden text-xl lg:block">Open Interpreter</div>
 	<div class="flex flex-col text-lg md:flex-row md:space-x-12">
+		<a href="https://changes.openinterpreter.com/" class="hover:underline">Get Updates</a>
 		<a href="https://discord.gg/Hvz9Axh84z" class="hover:underline">Discord</a>
 		<div use:clickOutside on:click_outside={toggleDocs} class="relative">
 			<button
@@ -39,7 +40,7 @@
 				</div>
 			{/if}
 		</div>
-		<a href="https://changes.openinterpreter.com/" class="hover:underline">Updates</a>
+
 		<a href="https://pcr08jir95k.typeform.com/to/WfuYTxMM" class="hover:underline">Contact</a><a
 			href="https://0ggfznkwh4j.typeform.com/to/W5At4fmF"
 			class="rounded border px-2 hover:underline">Careers</a
