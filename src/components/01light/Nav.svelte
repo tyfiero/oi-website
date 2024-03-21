@@ -15,7 +15,7 @@
 	class="fixed top-0 z-10 flex w-full items-center justify-between px-6 py-6 text-white sm:px-12"
 >
 	<div class="flex items-center space-x-4">
-		<div class="h-8 w-8 rounded-full bg-white saturate-200"></div>
+		<a href="/" class="h-8 w-8 rounded-full bg-white saturate-200"></a>
 	</div>
 	<div class="hidden text-xl lg:block">Open Interpreter</div>
 	<div class="flex flex-col text-lg md:flex-row md:space-x-12">
