@@ -56,7 +56,7 @@
 				<!-- Container for the two left buttons -->
 				<div class="mb-4 mr-4 flex items-center space-x-6 md:mb-0">
 					<a
-						href="https://github.com/KillianLucas/open-interpreter/"
+						href="https://buy.stripe.com/8wMbLV5tAgM20rSdQQ"
 						class="h-min rounded-full border border-white px-3 py-1 text-white hover:bg-white hover:text-black"
 						>Pre-order the <span class="">Light</span></a
 					>
@@ -84,7 +84,7 @@
 
 				<!-- Right button -->
 				<a
-					href="/01-light"
+					href="https://twitter.com/OpenInterpreter"
 					class="align-center flex h-min items-center justify-center gap-1.5 rounded border border-white px-2 py-1 align-middle text-white hover:bg-white hover:text-black"
 					>Watch the video
 					<svg

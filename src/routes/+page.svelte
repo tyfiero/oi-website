@@ -55,14 +55,14 @@
 				<div class="mb-4 mr-4 flex items-center space-x-6 md:mb-0">
 					<a
 						href="https://github.com/KillianLucas/open-interpreter/"
-						class="h-min border border-black px-3 py-2 transition hover:bg-black hover:text-white"
+						class="h-min rounded-md border border-black px-3 py-2 transition hover:bg-black hover:text-white"
 						>★ 40K Github</a
 					>
 					<a
-						href="https://github.com/KillianLucas/open-interpreter/#demo"
+						href="https://twitter.com/OpenInterpreter"
 						class="flex h-min items-center space-x-1 border-b border-black transition hover:border-transparent"
 					>
-						<span>Watch 01 Keynote</span>
+						<span>Watch the 01 video</span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -83,8 +83,8 @@
 				<!-- Right button -->
 				<a
 					href="/01"
-					class="h-min border border-black px-3 py-2 transition hover:bg-black hover:text-white"
-					>Pre-Order the 01 Light</a
+					class="h-min rounded-md border border-black px-3 py-2 transition hover:bg-black hover:text-white"
+					>Pre-order the 01 Light</a
 				>
 			</div>
 		</div>
