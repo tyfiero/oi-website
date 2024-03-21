@@ -39,6 +39,7 @@
 		"@iconify/svelte": "^3.1.6",
 		"@supabase/supabase-js": "^2.39.6",
 		"@sveltejs/adapter-vercel": "^5.1.0",
+		"@vercel/analytics": "^1.2.2",
 		"base64-arraybuffer": "^1.0.2",
 		"prettier-plugin-svelte": "^3.2.1",
 		"svelte-persisted-store": "^0.9.1"
