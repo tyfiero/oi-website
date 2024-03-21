@@ -38,9 +38,21 @@
 		Your browser does not support the video tag.
 	</video> -->
 	<div class="absolute left-0 top-0 -z-30 h-full w-full bg-black"></div>
+	<video
+		class="pointer-events-none absolute left-1/2 top-1/2 -z-10 max-h-full min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-[22%]"
+		autoplay
+		loop
+		muted
+		playsinline
+		poster="/assets/s.jpg"
+	>
+		<source src="/assets/sizzle.mp4" type="video/mp4" />
+		Your browser does not support the video tag.
+	</video>
+	<!-- 
 	<div class="absolute left-0 top-0 -z-20 h-full w-full opacity-100">
 		<img src="TEST2.jpg" alt="" class="h-full w-full object-cover" />
-	</div>
+	</div> -->
 	<Nav />
 	<section class="z-50 h-screen pb-24 sm:pb-0">
 		<div
