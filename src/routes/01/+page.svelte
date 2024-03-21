@@ -64,9 +64,12 @@
 				>The <span class="font-medium">01 Light</span> is a voice interface for your home computer.</span
 			>
 
-			<div class="flex flex-wrap justify-between text-lg">
+			<div class="flex w-full flex-wrap justify-between text-lg">
 				<!-- Container for the two left buttons -->
-				<div class="mb-4 mr-4 flex items-center space-x-6 md:mb-0">
+				<!-- <div class="mb-4 mr-4 flex items-center space-x-6 md:mb-0"> -->
+				<div
+					class="mb-4 flex w-full flex-col items-center justify-center gap-4 space-x-6 md:mb-0 md:mr-4 md:w-fit md:flex-row md:justify-start md:gap-0"
+				>
 					<a
 						href="https://buy.stripe.com/8wMbLV5tAgM20rSdQQ"
 						class="h-min rounded-full border border-white px-3 py-1 text-white hover:bg-white hover:text-black"
@@ -74,7 +77,7 @@
 					>
 					<a
 						href="https://github.com/OpenInterpreter/01"
-						class="flex h-min items-center space-x-1 border-b border-white text-white hover:border-transparent"
+						class="!m-0 flex h-min items-center space-x-1 border-b border-white text-white hover:border-transparent md:!ml-4"
 					>
 						<span>Build your own</span>
 						<svg
@@ -97,7 +100,7 @@
 				<!-- Right button -->
 				<a
 					href="https://twitter.com/OpenInterpreter/status/1770821439458840846"
-					class="align-center flex h-min items-center justify-center gap-1.5 rounded border border-white px-2 py-1 align-middle text-white hover:bg-white hover:text-black"
+					class="align-center mx-auto mt-4 flex h-min items-center justify-center gap-1.5 rounded border border-white px-2 py-1 align-middle text-white hover:bg-white hover:text-black md:mx-0"
 					>Watch the video
 					<svg
 						fill="currentColor"
