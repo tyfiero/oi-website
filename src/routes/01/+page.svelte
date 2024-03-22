@@ -46,7 +46,10 @@
 		playsinline
 		poster="/assets/s.jpg"
 	>
-		<source src="/assets/sizzle.mp4" type="video/mp4" />
+		<source
+			src="https://neyguovvcjxfzhqpkicj.supabase.co/storage/v1/object/sign/video/sizzle.mp4?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ2aWRlby9zaXp6bGUubXA0IiwiaWF0IjoxNzExMDg2MTQyLCJleHAiOjIwMjY0NDYxNDJ9.3JVnG2HPYYu3H8AG-UA9BczndcEaAnpCwjI8xq7RtBA&t=2024-03-22T05%3A42%3A22.888Z"
+			type="video/mp4"
+		/>
 		Your browser does not support the video tag.
 	</video>
 	<!-- 
