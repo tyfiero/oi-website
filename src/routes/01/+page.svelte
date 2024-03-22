@@ -22,7 +22,7 @@
 		name="twitter:description"
 		content="The 01 Project is a voice interface for your home computer."
 	/>
-	<meta name="twitter:image" content="https://openinterpreter.com/assets/01-model.jpg" />
+	<meta name="twitter:image" content="https://openinterpreter.com/01-model.jpg" />
 </svelte:head>
 
 <div class="relative h-screen cursor-default selection:bg-black selection:text-black">
