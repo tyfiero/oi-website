@@ -46,7 +46,10 @@
 		playsinline
 		poster="/assets/s.jpg"
 	>
-		<source src="/assets/sizzle.mp4" type="video/mp4" />
+		<source
+			src="https://github.com/tyfiero/oi-website/blob/main/static/assets/sizzle.mp4"
+			type="video/mp4"
+		/>
 		Your browser does not support the video tag.
 	</video>
 	<!-- 
