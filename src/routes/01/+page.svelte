@@ -9,7 +9,7 @@
 	<meta property="og:image" content="https://openinterpreter.com/assets/01-model.jpg" />
 	<meta
 		property="og:description"
-		content="The 01 Project is a voice interface for your home computer."
+		content="The 01 Light is a voice interface for your home computer."
 	/>
 	<meta property="og:url" content="https://openinterpreter.com/01" />
 	<meta property="og:image:width" content="1200" />
@@ -20,7 +20,7 @@
 	<meta name="twitter:title" content="The 01 Project" />
 	<meta
 		name="twitter:description"
-		content="The 01 Project is a voice interface for your home computer."
+		content="The 01 Light is a voice interface for your home computer."
 	/>
 	<meta name="twitter:image" content="https://openinterpreter.com/01-model.jpg" />
 </svelte:head>
