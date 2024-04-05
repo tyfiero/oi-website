@@ -6,7 +6,7 @@
 	<title>The Open Interpreter Project</title>
 
 	<meta property="og:title" content="The Open Interpreter Project" />
-	<meta property="og:image" content="https://openinterpreter.com/assets/thumbnail.jpg" />
+	<meta property="og:image" content="https://openinterpreter.com/assets/01-model.jpg" />
 	<meta
 		property="og:description"
 		content="Open Interpreter is a free, open-source code interpreter."
@@ -22,7 +22,7 @@
 		name="twitter:description"
 		content="Open Interpreter is a free, open-source code interpreter."
 	/>
-	<meta name="twitter:image" content="https://openinterpreter.com/assets/thumbnail.jpg" />
+	<meta name="twitter:image" content="https://openinterpreter.com/assets/01-model.jpg" />
 </svelte:head>
 <div
 	class="relative h-screen cursor-default bg-white invert selection:bg-black selection:text-white"
