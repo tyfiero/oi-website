@@ -37,6 +37,9 @@
 						class="whitespace-nowrap hover:underline">Open Interpreter</a
 					>
 					<a href="https://01.openinterpreter.com/" class="hover:underline">01 Project</a>
+					<a href="https://01.openinterpreter.com/legal/fulfillment-policy" class="hover:underline"
+						>Policies</a
+					>
 				</div>
 			{/if}
 		</div>
