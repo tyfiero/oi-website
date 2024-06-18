@@ -6,7 +6,7 @@
 	<title>The Open Interpreter Project</title>
 
 	<meta property="og:title" content="The Open Interpreter Project" />
-	<meta property="og:image" content="https://openinterpreter.com/assets/01-model.jpg" />
+	<meta property="og:image" content="https://openinterpreter.com/og.png" />
 	<meta
 		property="og:description"
 		content="Open Interpreter is a free, open-source code interpreter."
