@@ -22,7 +22,7 @@
 		name="twitter:description"
 		content="Open Interpreter is a free, open-source code interpreter."
 	/>
-	<meta name="twitter:image" content="https://openinterpreter.com/assets/01-model.jpg" />
+	<meta name="twitter:image" content="https://openinterpreter.com/01-model.jpg" />
 </svelte:head>
 <div
 	class="relative h-screen cursor-default bg-white invert selection:bg-black selection:text-white"
@@ -59,7 +59,7 @@
 					<a
 						href="https://github.com/KillianLucas/open-interpreter/"
 						class="h-min rounded-md border border-black px-2 py-1 hover:bg-black hover:text-white"
-						>★ 40K Github</a
+						>★ 49K Github</a
 					>
 					<a
 						href="https://twitter.com/OpenInterpreter/status/1770821439458840846"
@@ -85,9 +85,11 @@
 
 				<!-- Right button -->
 				<a
-					href="/01"
+					href="https://0ggfznkwh4j.typeform.com/to/G21i9lJ2"
+					target="_blank"
+					rel="noopener noreferrer"
 					class="h-min rounded-md border border-black px-2 py-1 hover:bg-black hover:text-white"
-					>Learn more about 01</a
+					>Get early access to the Desktop App</a
 				>
 			</div>
 		</div>
