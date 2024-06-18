@@ -22,7 +22,7 @@
 		name="twitter:description"
 		content="Open Interpreter is a free, open-source code interpreter."
 	/>
-	<meta name="twitter:image" content="https://openinterpreter.com/01-model.jpg" />
+	<meta name="twitter:image" content="https://openinterpreter.com/og.png" />
 </svelte:head>
 <div
 	class="relative h-screen cursor-default bg-white invert selection:bg-black selection:text-white"
