@@ -28,7 +28,7 @@
 	class="relative h-screen cursor-default bg-white invert selection:bg-black selection:text-white"
 >
 	<video
-		class="pointer-events-none absolute left-1/2 top-1/2 -z-10 max-h-full min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-[18%] invert"
+		class="pointer-events-none absolute left-1/2 top-1/2 -z-10 max-h-full min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 transform object-cover opacity-[12%] invert"
 		autoplay
 		loop
 		muted
