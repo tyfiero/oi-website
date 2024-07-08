@@ -73,12 +73,21 @@
 				<div
 					class="mb-4 flex w-full flex-col items-center justify-center gap-4 space-x-6 md:mb-0 md:mr-4 md:w-fit md:flex-row md:justify-start md:gap-0"
 				>
-					<a
+					<!-- <a
 						href="https://buy.stripe.com/8wMbLV5tAgM20rSdQQ"
 						class="h-min rounded-full border border-white px-3 py-1 text-white hover:bg-white hover:text-black"
 						>Pre-order the <span class="">Light</span></a
 					>
 					<a
+						href="https://github.com/OpenInterpreter/01"
+						class="!m-0 flex h-min items-center space-x-1 border-b border-white text-white hover:border-transparent md:!ml-4"
+					> -->
+					<a
+						href="https://github.com/OpenInterpreter/01"
+						class="h-min rounded-full border border-white px-3 py-1 text-white hover:bg-white hover:text-black"
+						>Build your own</span></a
+					>
+					<!-- <a
 						href="https://github.com/OpenInterpreter/01"
 						class="!m-0 flex h-min items-center space-x-1 border-b border-white text-white hover:border-transparent md:!ml-4"
 					>
@@ -97,7 +106,7 @@
 								d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
 							></path>
 						</svg>
-					</a>
+					</a> -->
 				</div>
 
 				<!-- Right button -->
