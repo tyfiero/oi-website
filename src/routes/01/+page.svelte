@@ -85,7 +85,7 @@
 					<a
 						href="https://github.com/OpenInterpreter/01"
 						class="h-min rounded-full border border-white px-3 py-1 text-white hover:bg-white hover:text-black"
-						>Build your own</span></a
+						>Build your own</a
 					>
 					<!-- <a
 						href="https://github.com/OpenInterpreter/01"
