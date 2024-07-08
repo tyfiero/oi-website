@@ -73,6 +73,31 @@
 				<div
 					class="mb-4 flex w-full flex-col items-center justify-center gap-4 space-x-6 md:mb-0 md:mr-4 md:w-fit md:flex-row md:justify-start md:gap-0"
 				>
+				<a
+					href="https://github.com/OpenInterpreter/01"
+					class="h-min rounded-md border border-black px-2 py-1 hover:bg-black hover:text-white"
+					>★ 4.8K Github</a
+				>
+				<a
+					href="https://01.openinterpreter.com/"
+					class="flex h-min items-center space-x-1 border-b border-black hover:border-transparent"
+				>
+					<span>Read the docs</span>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1"
+						stroke="currentColor"
+						class="h-5 w-5"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+						></path>
+					</svg>
+				</a>
 					<!-- <a
 						href="https://buy.stripe.com/8wMbLV5tAgM20rSdQQ"
 						class="h-min rounded-full border border-white px-3 py-1 text-white hover:bg-white hover:text-black"
@@ -82,11 +107,11 @@
 						href="https://github.com/OpenInterpreter/01"
 						class="!m-0 flex h-min items-center space-x-1 border-b border-white text-white hover:border-transparent md:!ml-4"
 					> -->
-					<a
+					<!-- <a
 						href="https://github.com/OpenInterpreter/01"
 						class="h-min rounded-full border border-white px-3 py-1 text-white hover:bg-white hover:text-black"
 						>Build your own</a
-					>
+					> -->
 					<!-- <a
 						href="https://github.com/OpenInterpreter/01"
 						class="!m-0 flex h-min items-center space-x-1 border-b border-white text-white hover:border-transparent md:!ml-4"
