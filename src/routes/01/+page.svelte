@@ -52,7 +52,7 @@
 		/>
 		Your browser does not support the video tag.
 	</video> -->
-	
+
 	<div class="absolute left-0 top-0 -z-20 h-full w-full opacity-100">
 		<img src="TEST2.jpg" alt="" class="h-full w-full object-cover" />
 	</div>
@@ -73,31 +73,31 @@
 				<div
 					class="mb-4 flex w-full flex-col items-center justify-center gap-4 space-x-6 md:mb-0 md:mr-4 md:w-fit md:flex-row md:justify-start md:gap-0"
 				>
-				<a
-					href="https://github.com/OpenInterpreter/01"
-					class="h-min rounded-md border border-black px-2 py-1 hover:bg-black hover:text-white"
-					>★ 4.8K Github</a
-				>
-				<a
-					href="https://01.openinterpreter.com/"
-					class="flex h-min items-center space-x-1 border-b border-black hover:border-transparent"
-				>
-					<span>Read the docs</span>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1"
-						stroke="currentColor"
-						class="h-5 w-5"
+					<a
+						href="https://github.com/OpenInterpreter/01"
+						class="h-min rounded-md border border-white px-2 py-1 hover:bg-white hover:text-black"
+						>★ 4.8K Github</a
 					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-						></path>
-					</svg>
-				</a>
+					<a
+						href="https://01.openinterpreter.com/"
+						class="flex h-min items-center space-x-1 border-b border-white hover:border-transparent"
+					>
+						<span>Read the docs</span>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1"
+							stroke="currentColor"
+							class="h-5 w-5"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+							></path>
+						</svg>
+					</a>
 					<!-- <a
 						href="https://buy.stripe.com/8wMbLV5tAgM20rSdQQ"
 						class="h-min rounded-full border border-white px-3 py-1 text-white hover:bg-white hover:text-black"
