@@ -61,7 +61,7 @@
 						class="h-min rounded-md border border-black px-2 py-1 hover:bg-black hover:text-white"
 						>★ 49K Github</a
 					>
-					<a
+					<!-- <a
 						href="https://twitter.com/OpenInterpreter/status/1770821439458840846"
 						class="flex h-min items-center space-x-1 border-b border-black hover:border-transparent"
 					>
@@ -80,7 +80,7 @@
 								d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
 							></path>
 						</svg>
-					</a>
+					</a> -->
 				</div>
 
 				<!-- Right button -->
