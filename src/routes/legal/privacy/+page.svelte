@@ -27,7 +27,7 @@ We may collect a variety of information from or about you or your devices from v
 - **Location Information**: When you use our Services, we infer your general location information, for example, by using your internet protocol (IP) address.
 - **Device Information**: We receive information about the device and software you use to access our Services, including IP address, web browser type, operating system version, application installations (such as command line tools we check and install if necessary), and relevant desktop-specific identifiers. Additionally, if the language model executes code that reveals the contents of files on your computer, we may receive this information as well. It is important to carefully consider which permissions are granted, as allowing file access means that the application can see, modify, or delete files on your system. **By approving these actions, you acknowledge that you understand the potential consequences, including unintended system modifications or data loss.**
 - **Usage Information**: To help us understand how you use our Services and to help us improve them, we automatically receive information about your interactions with our Services, like the pages or other content you view, the searches you conduct, and the dates and times of your visits.
-- **Information from Cookies and Similar Technologies**: We and our third-party partners collect information using local storage or similar technologies suitable for desktop environments. Our third-party partners, such as analytics and advertising partners, may use these technologies to collect information about your online activities over time and across different services. Since this is a desktop application, we may use local storage or similar technologies to store user settings and preferences. You can control local storage settings through the application preferences, but please note that disabling local storage may affect the functionality of the Service.
+- **Information from Cookies and Similar Technologies**: Since this is a desktop application, we may use local storage or similar technologies to store user settings and preferences.
 
 ### C. Information We Receive from Other Sources
 
@@ -43,7 +43,6 @@ We use the information we collect for the following purposes:
 - **To understand and analyze how you use our Services** and develop new products, services, features, and functionality.
 - **To communicate with you**, provide you with updates and other information relating to our Services, provide information that you request, respond to comments and questions, and otherwise provide customer support.
 - **To facilitate the connection of third-party services or applications**.
-- **For marketing and advertising purposes**, such as developing and providing promotional and advertising materials that may be relevant, valuable, or otherwise of interest to you.
 - **To generate anonymized, aggregate data** containing only de-identified, non-personal information that we may use for any lawful purpose.
 - **To facilitate transactions and payments**.
 - **To find and prevent fraud and abuse**, and respond to trust and safety issues that may arise.
